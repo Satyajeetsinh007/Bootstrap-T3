@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="d1.png" alt="" width="30" height="24" class="rounded-circle">My Brand
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#id1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="id1">
+                <ul class="navbar-nav ms-auto">
+                    <div class="con1">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#id2" class="nav-link active" data-bs-toggle="modal">Login</a>
+                            <!-- <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#id1">Login</button> -->
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+    <div id="id2" class="modal fade">
+        <div class="modal-dialog modal-sm modal-dialog-centered ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Login</h1>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        UserName: <input type="text" placeholder="enter name">
+                        Password: <input type="password" name="" id="">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#id3">Login</button>
+                    <button class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="id3" class="modal fade">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">login message</h1>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Login Successful</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
